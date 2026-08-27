@@ -718,7 +718,7 @@ renderGrid('');
       if (!e.data || e.data.source !== 'flot-dashboard' || e.data.type !== 'menu-preview' || !e.data.menu) return;
       applyDoc(e.data.menu);
     });
-    window.parent.postMessage({ source:'flot-site', type:'preview-ready' }, '*');
+    window.parent.postMessage({ source:'flot-site', type:'preview-ready' }, 'https://dashboard.flotme.ai');
   }
 })();
 })();
